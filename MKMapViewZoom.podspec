@@ -10,7 +10,11 @@ Pod::Spec.new do |s|
   s.author       = 'Troy Brant'
 
   s.source       = { :git => "https://github.com/UprightJoe/MKMapViewZoom.git", :tag => "1.0.0" }
-  s.platform     = :ios
+  s."platforms": {
+    "ios": "7.0",
+    "osx": "10.7",
+    "tvos": "9.0"
+  }
 
   s.source_files = '*.{h,m}'
   s.public_header_files = '*.h'
